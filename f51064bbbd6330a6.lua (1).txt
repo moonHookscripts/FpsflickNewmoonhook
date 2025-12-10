@@ -1,0 +1,2236 @@
+-- ts file was generated at discord.gg/25ms
+
+
+local v110 = ({
+    AddWindow = function(_, p1)
+        local v2 = {}
+        local v3 = UDim2.new(0, 411, 0, 390)
+        local v4 = game.CoreGui
+        Bankroll = Instance.new("ScreenGui")
+        Bankroll.Name = "Bankroll"
+        Bankroll.Enabled = true
+        Bankroll.DisplayOrder = 0
+        Bankroll.IgnoreGuiInset = false
+        Bankroll.Parent = v4
+        Frame = Instance.new("Frame")
+        Frame.Name = "Frame"
+        Frame.Position = UDim2.new(0, 0, 0, 0)
+        Frame.Size = v3
+        Frame.AnchorPoint = Vector2.new(0, 0)
+        Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Frame.BackgroundTransparency = 0
+        Frame.BorderSizePixel = 0
+        Frame.ClipsDescendants = false
+        Frame.Visible = true
+        Frame.ZIndex = 1
+        Frame.AutomaticSize = Enum.AutomaticSize.None
+        Frame.LayoutOrder = 0
+        Frame.Active = true
+        Frame.Draggable = true
+        Frame.Parent = Bankroll
+        Bottom = Instance.new("Frame")
+        Bottom.Name = "Bottom"
+        Bottom.Position = UDim2.new(0, 0, 0.9089999794960022, 0)
+        Bottom.Size = UDim2.new(1, 0, 0.09000000357627869, 0)
+        Bottom.AnchorPoint = Vector2.new(0, 0)
+        Bottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Bottom.BackgroundTransparency = 0
+        Bottom.BorderSizePixel = 0
+        Bottom.ClipsDescendants = false
+        Bottom.Visible = true
+        Bottom.ZIndex = 1
+        Bottom.AutomaticSize = Enum.AutomaticSize.None
+        Bottom.LayoutOrder = 0
+        Bottom.Parent = Frame
+        local vu5 = Instance.new("ScrollingFrame")
+        vu5.Name = "TabScroll"
+        vu5.Position = UDim2.new(0, 0, 0.1, 0)
+        vu5.Size = UDim2.new(1, 0, 0.899, 0)
+        vu5.AnchorPoint = Vector2.new(0, 0)
+        vu5.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+        vu5.BackgroundTransparency = 1
+        vu5.BorderSizePixel = 0
+        vu5.ScrollBarThickness = 4
+        vu5.ScrollBarImageColor3 = Color3.fromRGB(100, 100, 100)
+        vu5.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+        vu5.VerticalScrollBarInset = Enum.ScrollBarInset.None
+        vu5.ScrollingDirection = Enum.ScrollingDirection.X
+        vu5.CanvasSize = UDim2.new(0, 0, 0, 0)
+        vu5.Visible = true
+        vu5.ZIndex = 1
+        vu5.LayoutOrder = 0
+        vu5.AutomaticCanvasSize = Enum.AutomaticSize.None
+        vu5.Parent = Bottom
+        local vu6 = Instance.new("UIListLayout")
+        vu6.Name = "UIListLayout"
+        vu6.FillDirection = Enum.FillDirection.Horizontal
+        vu6.HorizontalAlignment = Enum.HorizontalAlignment.Left
+        vu6.VerticalAlignment = Enum.VerticalAlignment.Top
+        vu6.Padding = UDim.new(0, 4)
+        vu6.SortOrder = Enum.SortOrder.LayoutOrder
+        vu6.Parent = vu5
+        local function v8()
+            local v7 = vu6.AbsoluteContentSize
+            vu5.CanvasSize = UDim2.new(0, v7.X + 20, 0, vu5.AbsoluteSize.Y)
+        end
+        local v9 = vu6
+        vu6.GetPropertyChangedSignal(v9, "AbsoluteContentSize"):Connect(v8)
+        v8()
+        BottomLine = Instance.new("Frame")
+        BottomLine.Name = "BottomLine"
+        BottomLine.Position = UDim2.new(0, 0, 0, 0)
+        BottomLine.Size = UDim2.new(1, 0, 0.029999999329447746, 0)
+        BottomLine.AnchorPoint = Vector2.new(0, 0)
+        BottomLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        BottomLine.BackgroundTransparency = 0
+        BottomLine.BorderSizePixel = 0
+        BottomLine.ClipsDescendants = false
+        BottomLine.Visible = true
+        BottomLine.ZIndex = 3
+        BottomLine.AutomaticSize = Enum.AutomaticSize.None
+        BottomLine.LayoutOrder = 0
+        BottomLine.Parent = Bottom
+        UIGradient_2 = Instance.new("UIGradient")
+        UIGradient_2.Name = "UIGradient"
+        UIGradient_2.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 191, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(65, 48, 65))
+        })
+        UIGradient_2.Rotation = 0
+        UIGradient_2.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_2.Offset = Vector2.new(0, 0.5)
+        UIGradient_2.Parent = BottomLine
+        BottomLin2 = Instance.new("Frame")
+        BottomLin2.Name = "BottomLin2"
+        BottomLin2.Position = UDim2.new(0, 0, 0, 0)
+        BottomLin2.Size = UDim2.new(0.5, 0, 0.019999999552965164, 0)
+        BottomLin2.AnchorPoint = Vector2.new(0, 0)
+        BottomLin2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        BottomLin2.BackgroundTransparency = 0
+        BottomLin2.BorderSizePixel = 0
+        BottomLin2.ClipsDescendants = false
+        BottomLin2.Visible = true
+        BottomLin2.ZIndex = 4
+        BottomLin2.AutomaticSize = Enum.AutomaticSize.None
+        BottomLin2.LayoutOrder = 0
+        BottomLin2.Parent = Bottom
+        UIGradient_3 = Instance.new("UIGradient")
+        UIGradient_3.Name = "UIGradient"
+        UIGradient_3.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(63, 47, 63)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(181, 136, 181))
+        })
+        UIGradient_3.Rotation = 0
+        UIGradient_3.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_3.Offset = Vector2.new(0, 0.5)
+        UIGradient_3.Parent = BottomLin2
+        UIGradient_4 = Instance.new("UIGradient")
+        UIGradient_4.Name = "UIGradient"
+        UIGradient_4.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(18, 18, 18)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 20))
+        })
+        UIGradient_4.Rotation = 90
+        UIGradient_4.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_4.Offset = Vector2.new(0, 0)
+        UIGradient_4.Parent = Bottom
+        Container = Instance.new("Frame")
+        Container.Name = "Container"
+        Container.Position = UDim2.new(0.014000000432133675, 0, 0.06700000166893005, 0)
+        Container.Size = UDim2.new(0.9700000286102295, 0, 0.8240000009536743, 0)
+        Container.AnchorPoint = Vector2.new(0, 0)
+        Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Container.BackgroundTransparency = 1
+        Container.BorderSizePixel = 1
+        Container.ClipsDescendants = false
+        Container.Visible = true
+        Container.ZIndex = 1
+        Container.AutomaticSize = Enum.AutomaticSize.None
+        Container.LayoutOrder = 0
+        Container.Parent = Frame
+        UIGradient_10 = Instance.new("UIGradient")
+        UIGradient_10.Name = "UIGradient"
+        UIGradient_10.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(15, 15, 15)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(9, 9, 9))
+        })
+        UIGradient_10.Rotation = 90
+        UIGradient_10.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_10.Offset = Vector2.new(0, 0)
+        UIGradient_10.Parent = Frame
+        Header = Instance.new("Frame")
+        Header.Name = "Header"
+        Header.Position = UDim2.new(0, 0, 0, 0)
+        Header.Size = UDim2.new(1, 0, 0.05000000074505806, 0)
+        Header.AnchorPoint = Vector2.new(0, 0)
+        Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Header.BackgroundTransparency = 0
+        Header.BorderSizePixel = 0
+        Header.ClipsDescendants = false
+        Header.Visible = true
+        Header.ZIndex = 1
+        Header.AutomaticSize = Enum.AutomaticSize.None
+        Header.LayoutOrder = 0
+        Header.Parent = Frame
+        HeaderLine = Instance.new("Frame")
+        HeaderLine.Name = "HeaderLine"
+        HeaderLine.Position = UDim2.new(0, 0, 1, 0)
+        HeaderLine.Size = UDim2.new(1, 0, 0.06800000369548798, 0)
+        HeaderLine.AnchorPoint = Vector2.new(0, 0)
+        HeaderLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        HeaderLine.BackgroundTransparency = 0
+        HeaderLine.BorderSizePixel = 0
+        HeaderLine.ClipsDescendants = false
+        HeaderLine.Visible = true
+        HeaderLine.ZIndex = 3
+        HeaderLine.AutomaticSize = Enum.AutomaticSize.None
+        HeaderLine.LayoutOrder = 0
+        HeaderLine.Parent = Header
+        UIGradient_11 = Instance.new("UIGradient")
+        UIGradient_11.Name = "UIGradient"
+        UIGradient_11.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 191, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(65, 48, 65))
+        })
+        UIGradient_11.Rotation = 0
+        UIGradient_11.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_11.Offset = Vector2.new(0, 0.5)
+        UIGradient_11.Parent = HeaderLine
+        HeaderLin2 = Instance.new("Frame")
+        HeaderLin2.Name = "HeaderLin2"
+        HeaderLin2.Position = UDim2.new(0, 0, 1, 0)
+        HeaderLin2.Size = UDim2.new(0.5, 0, 0.06800000369548798, 0)
+        HeaderLin2.AnchorPoint = Vector2.new(0, 0)
+        HeaderLin2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        HeaderLin2.BackgroundTransparency = 0
+        HeaderLin2.BorderSizePixel = 0
+        HeaderLin2.ClipsDescendants = false
+        HeaderLin2.Visible = true
+        HeaderLin2.ZIndex = 4
+        HeaderLin2.AutomaticSize = Enum.AutomaticSize.None
+        HeaderLin2.LayoutOrder = 0
+        HeaderLin2.Parent = Header
+        UIGradient_12 = Instance.new("UIGradient")
+        UIGradient_12.Name = "UIGradient"
+        UIGradient_12.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(63, 47, 63)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(181, 136, 181))
+        })
+        UIGradient_12.Rotation = 0
+        UIGradient_12.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_12.Offset = Vector2.new(0, 0.5)
+        UIGradient_12.Parent = HeaderLin2
+        Title = Instance.new("TextLabel")
+        Title.Name = "Title"
+        Title.Position = UDim2.new(0.30000001192092896, 0, 0, 0)
+        Title.Size = UDim2.new(0.30000001192092896, 0, 0.800000011920929, 0)
+        Title.AnchorPoint = Vector2.new(0, 0)
+        Title.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+        Title.BackgroundTransparency = 1
+        Title.BorderSizePixel = 1
+        Title.TextColor3 = Color3.fromRGB(255, 191, 255)
+        Title.TextScaled = true
+        Title.Text = p1 or "Bankroll Mafia"
+        Title.TextSize = 8
+        Title.Font = Enum.Font.SourceSansSemibold
+        Title.TextTransparency = 0
+        Title.Visible = true
+        Title.ZIndex = 1
+        Title.AutomaticSize = Enum.AutomaticSize.None
+        Title.TextXAlignment = Enum.TextXAlignment.Center
+        Title.TextYAlignment = Enum.TextYAlignment.Center
+        Title.LayoutOrder = 0
+        Title.Parent = Header
+        UIGradient_13 = Instance.new("UIGradient")
+        UIGradient_13.Name = "UIGradient"
+        UIGradient_13.Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(18, 18, 18)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 20))
+        })
+        UIGradient_13.Rotation = 90
+        UIGradient_13.Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0, 0),
+            NumberSequenceKeypoint.new(1, 0, 0)
+        })
+        UIGradient_13.Offset = Vector2.new(0, 0)
+        UIGradient_13.Parent = Header
+        UIStroke_6 = Instance.new("UIStroke")
+        UIStroke_6.Name = "UIStroke"
+        UIStroke_6.Color = Color3.fromRGB(44, 44, 44)
+        UIStroke_6.Transparency = 0
+        UIStroke_6.Thickness = 1
+        UIStroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+        UIStroke_6.Parent = Frame
+        v2.TabScroll = vu5
+        v2.Container = Container
+        local vu10 = 0
+        function v2.AddTab(p11, p12)
+            vu10 = vu10 + 1
+            local vu13 = p11
+            local vu14 = {}
+            TabButton = Instance.new("Frame")
+            TabButton.Name = "TabButton"
+            TabButton.Position = UDim2.new(0, 0, 0, 0)
+            TabButton.Size = UDim2.new(0.17000000178813934, 0, 0.800000011920929, 0)
+            TabButton.AnchorPoint = Vector2.new(0, 0)
+            TabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            TabButton.BackgroundTransparency = 0
+            TabButton.BorderSizePixel = 0
+            TabButton.ClipsDescendants = false
+            TabButton.Visible = true
+            TabButton.ZIndex = 1
+            TabButton.AutomaticSize = Enum.AutomaticSize.None
+            TabButton.LayoutOrder = vu10
+            TabButton.Parent = vu5
+            local v15 = Instance.new("UIAspectRatioConstraint")
+            v15.Name = "Aspect99"
+            v15.AspectRatio = 3.25
+            v15.Parent = TabButton
+            Text = Instance.new("TextLabel")
+            Text.Name = "Text"
+            Text.Position = UDim2.new(0, 0, 0, 0)
+            Text.Size = UDim2.new(0.9179999828338623, 0, 0.7870000004768372, 0)
+            Text.AnchorPoint = Vector2.new(0, 0)
+            Text.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+            Text.BackgroundTransparency = 1
+            Text.BorderSizePixel = 1
+            Text.Text = p12
+            Text.TextColor3 = Color3.fromRGB(127, 127, 127)
+            Text.TextScaled = true
+            Text.TextSize = 8
+            Text.Font = Enum.Font.SourceSansSemibold
+            Text.TextTransparency = 0
+            Text.Visible = true
+            Text.ZIndex = 1
+            Text.AutomaticSize = Enum.AutomaticSize.None
+            Text.TextXAlignment = Enum.TextXAlignment.Center
+            Text.TextYAlignment = Enum.TextYAlignment.Center
+            Text.LayoutOrder = 0
+            Text.Parent = TabButton
+            SwitchClick = Instance.new("TextButton")
+            SwitchClick.Name = "SwitchClick"
+            SwitchClick.Position = UDim2.new(0, 0, 0, 0)
+            SwitchClick.Size = UDim2.new(1, 0, 1, 0)
+            SwitchClick.AnchorPoint = Vector2.new(0, 0)
+            SwitchClick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            SwitchClick.BackgroundTransparency = 1
+            SwitchClick.BorderSizePixel = 1
+            SwitchClick.Text = ""
+            SwitchClick.TextColor3 = Color3.fromRGB(27, 42, 53)
+            SwitchClick.TextScaled = false
+            SwitchClick.TextSize = 8
+            SwitchClick.Font = Enum.Font.Legacy
+            SwitchClick.TextTransparency = 0
+            SwitchClick.Visible = true
+            SwitchClick.ZIndex = 1
+            SwitchClick.AutomaticSize = Enum.AutomaticSize.None
+            SwitchClick.TextXAlignment = Enum.TextXAlignment.Center
+            SwitchClick.TextYAlignment = Enum.TextYAlignment.Center
+            SwitchClick.LayoutOrder = 0
+            SwitchClick.Parent = TabButton
+            UIGradient = Instance.new("UIGradient")
+            UIGradient.Name = "UIGradient"
+            UIGradient.Color = ColorSequence.new({
+                ColorSequenceKeypoint.new(0, Color3.fromRGB(28, 28, 28)),
+                ColorSequenceKeypoint.new(1, Color3.fromRGB(16, 16, 16))
+            })
+            UIGradient.Rotation = 0
+            UIGradient.Transparency = NumberSequence.new({
+                NumberSequenceKeypoint.new(0, 0, 0),
+                NumberSequenceKeypoint.new(1, 0, 0)
+            })
+            UIGradient.Offset = Vector2.new(0, 0)
+            UIGradient.Parent = TabButton
+            UIStroke = Instance.new("UIStroke")
+            UIStroke.Name = "UIStroke"
+            UIStroke.Color = Color3.fromRGB(53, 53, 53)
+            UIStroke.Transparency = 0
+            UIStroke.Thickness = 1
+            UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+            UIStroke.Parent = TabButton
+            TabHose = Instance.new("Frame")
+            TabHose.Name = "TabHose"
+            TabHose.Position = UDim2.new(0, 0, 0, 0)
+            TabHose.Size = UDim2.new(1, 0, 1, 0)
+            TabHose.AnchorPoint = Vector2.new(0, 0)
+            TabHose.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+            TabHose.BackgroundTransparency = 1
+            TabHose.BorderSizePixel = 1
+            TabHose.ClipsDescendants = false
+            TabHose.Visible = true
+            TabHose.ZIndex = 1
+            TabHose.AutomaticSize = Enum.AutomaticSize.None
+            TabHose.LayoutOrder = 0
+            TabHose.Parent = Container
+            UIListLayout_2 = Instance.new("UIListLayout")
+            UIListLayout_2.Name = "UIListLayout"
+            UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+            UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Left
+            UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Top
+            UIListLayout_2.Padding = UDim.new(0, 8)
+            UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+            UIListLayout_2.Parent = TabHose
+            Right = Instance.new("ScrollingFrame")
+            Right.Name = "Right"
+            Right.Position = UDim2.new(0, 0, 0, 0)
+            Right.Size = UDim2.new(0.48899999260902405, 0, 1, 0)
+            Right.AnchorPoint = Vector2.new(0, 0)
+            Right.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+            Right.BackgroundTransparency = 1
+            Right.BorderSizePixel = 0
+            Right.CanvasSize = UDim2.new(0, 0, 2, 0)
+            Right.ScrollBarThickness = 0
+            Right.ScrollBarImageTransparency = 1
+            Right.Visible = true
+            Right.ZIndex = 1
+            Right.AutomaticCanvasSize = Enum.AutomaticSize.Y
+            Right.LayoutOrder = 2
+            Right.Parent = TabHose
+            Left = Instance.new("ScrollingFrame")
+            Left.Name = "Left"
+            Left.Position = UDim2.new(0, 0, 0, 0)
+            Left.Size = UDim2.new(0.48899999260902405, 0, 1, 0)
+            Left.AnchorPoint = Vector2.new(0, 0)
+            Left.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+            Left.BackgroundTransparency = 1
+            Left.BorderSizePixel = 0
+            Left.ScrollBarImageTransparency = 1
+            Left.CanvasSize = UDim2.new(0, 0, 0, 0)
+            Left.ScrollBarThickness = 0
+            Left.Visible = true
+            Left.ZIndex = 1
+            Left.AutomaticCanvasSize = Enum.AutomaticSize.Y
+            Left.LayoutOrder = 1
+            Left.Parent = TabHose
+            UIListLayout_3 = Instance.new("UIListLayout")
+            UIListLayout_3.Name = "UIListLayout"
+            UIListLayout_3.FillDirection = Enum.FillDirection.Vertical
+            UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Left
+            UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Top
+            UIListLayout_3.Padding = UDim.new(0, 10)
+            UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+            UIListLayout_3.Parent = Right
+            local function v16()
+                Right.CanvasSize = UDim2.new(0, UIListLayout_3.AbsoluteContentSize.X, 0, UIListLayout_3.AbsoluteContentSize.Y)
+            end
+            UIListLayout_3:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(v16)
+            v16()
+            UIListLayout_4 = Instance.new("UIListLayout")
+            UIListLayout_4.Name = "UIListLayout"
+            UIListLayout_4.FillDirection = Enum.FillDirection.Vertical
+            UIListLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Left
+            UIListLayout_4.VerticalAlignment = Enum.VerticalAlignment.Top
+            UIListLayout_4.Padding = UDim.new(0, 10)
+            UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+            UIListLayout_4.Parent = Left
+            local function v17()
+                Left.CanvasSize = UDim2.new(0, UIListLayout_4.AbsoluteContentSize.X, 0, UIListLayout_4.AbsoluteContentSize.Y)
+            end
+            UIListLayout_4:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(v17)
+            v17()
+            vu14.Container = TabHose
+            local vu18 = TabButton
+            vu14.Left = Left
+            vu14.Right = Right
+            function vu14.AddSection(_, p19, p20)
+                local v21 = {}
+                local v22 = p20 or "left"
+                section = Instance.new("Frame")
+                section.Name = "section"
+                section.Position = UDim2.new(0, 0, 0, 0)
+                section.Size = UDim2.new(0.9800000190734863, 0, 0, 0)
+                section.AnchorPoint = Vector2.new(0, 0)
+                section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                section.BackgroundTransparency = 0
+                section.BorderSizePixel = 1
+                section.ClipsDescendants = false
+                section.Visible = true
+                section.ZIndex = 1
+                section.AutomaticSize = Enum.AutomaticSize.Y
+                section.LayoutOrder = 0
+                section.Parent = v22 == "left" and vu14.Left or (v22 == "right" and vu14.Right or nil)
+                UICorner_2 = Instance.new("UICorner")
+                UICorner_2.Name = "UICorner"
+                UICorner_2.CornerRadius = UDim.new(0, 4)
+                UICorner_2.Parent = section
+                SectionTitle = Instance.new("TextLabel")
+                SectionTitle.Name = "SectionTitle"
+                SectionTitle.Position = UDim2.new(0, 0, 0, 0)
+                SectionTitle.Size = UDim2.new(1, 0, 0.9909999966621399, 0)
+                SectionTitle.AnchorPoint = Vector2.new(0, 0)
+                SectionTitle.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+                SectionTitle.BackgroundTransparency = 1
+                SectionTitle.BorderSizePixel = 1
+                SectionTitle.Text = p19 or "Section"
+                SectionTitle.TextColor3 = Color3.fromRGB(123, 123, 123)
+                SectionTitle.TextScaled = true
+                SectionTitle.TextSize = 8
+                SectionTitle.Font = Enum.Font.SourceSansSemibold
+                SectionTitle.TextTransparency = 0
+                SectionTitle.Visible = true
+                SectionTitle.ZIndex = 1
+                SectionTitle.AutomaticSize = Enum.AutomaticSize.None
+                SectionTitle.TextXAlignment = Enum.TextXAlignment.Center
+                SectionTitle.TextYAlignment = Enum.TextYAlignment.Center
+                SectionTitle.LayoutOrder = 1
+                SectionTitle.Parent = section
+                UIStroke_5 = Instance.new("UIStroke")
+                UIStroke_5.Name = "UIStroke"
+                UIStroke_5.Color = Color3.fromRGB(44, 44, 44)
+                UIStroke_5.Transparency = 0
+                UIStroke_5.Thickness = 1
+                UIStroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+                UIStroke_5.Parent = section
+                UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+                UIAspectRatioConstraint_2.Name = "UIAspectRatioConstraint"
+                UIAspectRatioConstraint_2.AspectRatio = 14
+                UIAspectRatioConstraint_2.AspectType = Enum.AspectType.FitWithinMaxSize
+                UIAspectRatioConstraint_2.Parent = SectionTitle
+                UIListLayout_5 = Instance.new("UIListLayout")
+                UIListLayout_5.Name = "UIListLayout"
+                UIListLayout_5.FillDirection = Enum.FillDirection.Vertical
+                UIListLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Left
+                UIListLayout_5.VerticalAlignment = Enum.VerticalAlignment.Top
+                UIListLayout_5.Padding = UDim.new(0, 9)
+                UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+                UIListLayout_5.Parent = section
+                UIGradient_6 = Instance.new("UIGradient")
+                UIGradient_6.Name = "UIGradient"
+                UIGradient_6.Color = ColorSequence.new({
+                    ColorSequenceKeypoint.new(0, Color3.fromRGB(17, 17, 17)),
+                    ColorSequenceKeypoint.new(1, Color3.fromRGB(12, 12, 12))
+                })
+                UIGradient_6.Rotation = 90
+                UIGradient_6.Transparency = NumberSequence.new({
+                    NumberSequenceKeypoint.new(0, 0, 0),
+                    NumberSequenceKeypoint.new(1, 0, 0)
+                })
+                UIGradient_6.Offset = Vector2.new(0, 0.6000000238418579)
+                UIGradient_6.Parent = section
+                function v21.AddToggle(_, p23, p24, pu25)
+                    local v26 = Instance.new("Frame")
+                    local v27 = Instance.new("TextButton")
+                    local vu28 = Instance.new("UIGradient")
+                    local vu29 = p24 or false
+                    v26.Name = "Toggle"
+                    v26.Position = UDim2.new(0, 0, 0, 0)
+                    v26.Size = UDim2.new(1, 0, 0.9490000009536743, 0)
+                    v26.AnchorPoint = Vector2.new(0, 0)
+                    v26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    v26.BackgroundTransparency = 1
+                    v26.BorderSizePixel = 0
+                    v26.ClipsDescendants = false
+                    v26.Visible = true
+                    v26.ZIndex = 1
+                    v26.AutomaticSize = Enum.AutomaticSize.None
+                    v26.LayoutOrder = # section:GetChildren()
+                    v26.Parent = section
+                    v27.Name = "ToggleClick"
+                    v27.Position = UDim2.new(0, 0, 0, 0)
+                    v27.Size = UDim2.new(1, 0, 1, 0)
+                    v27.AnchorPoint = Vector2.new(0, 0)
+                    v27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    v27.BackgroundTransparency = 1
+                    v27.BorderSizePixel = 1
+                    v27.Text = ""
+                    v27.TextColor3 = Color3.fromRGB(27, 42, 53)
+                    v27.TextScaled = false
+                    v27.TextSize = 8
+                    v27.Font = Enum.Font.Legacy
+                    v27.TextTransparency = 0
+                    v27.Visible = true
+                    v27.ZIndex = 4
+                    v27.AutomaticSize = Enum.AutomaticSize.None
+                    v27.TextXAlignment = Enum.TextXAlignment.Center
+                    v27.TextYAlignment = Enum.TextYAlignment.Center
+                    v27.LayoutOrder = 0
+                    v27.Parent = v26
+                    Text_4 = Instance.new("TextLabel")
+                    Text_4.Name = "Text"
+                    Text_4.Position = UDim2.new(0.11900000274181366, 0, - 0.10000000149011612, 0)
+                    Text_4.Size = UDim2.new(0.699999988079071, 0, 1, 0)
+                    Text_4.AnchorPoint = Vector2.new(0, 0)
+                    Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    Text_4.BackgroundTransparency = 1
+                    Text_4.BorderSizePixel = 1
+                    Text_4.Text = p23 or "Toggle"
+                    Text_4.TextColor3 = Color3.fromRGB(127, 127, 127)
+                    Text_4.TextScaled = true
+                    Text_4.TextSize = 8
+                    Text_4.Font = Enum.Font.SourceSansSemibold
+                    Text_4.TextTransparency = 0
+                    Text_4.Visible = true
+                    Text_4.ZIndex = 1
+                    Text_4.AutomaticSize = Enum.AutomaticSize.None
+                    Text_4.TextXAlignment = Enum.TextXAlignment.Left
+                    Text_4.TextYAlignment = Enum.TextYAlignment.Center
+                    Text_4.LayoutOrder = 0
+                    Text_4.Parent = v26
+                    CheckBox = Instance.new("Frame")
+                    CheckBox.Name = "CheckBox"
+                    CheckBox.Position = UDim2.new(0.022, 0, 0, 0)
+                    CheckBox.Size = UDim2.new(0.0417999973, 0, 0.50799998, 0)
+                    CheckBox.AnchorPoint = Vector2.new(0, 0)
+                    CheckBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    CheckBox.BackgroundTransparency = 0
+                    CheckBox.BorderSizePixel = 0
+                    CheckBox.ClipsDescendants = false
+                    CheckBox.Visible = true
+                    CheckBox.ZIndex = 1
+                    CheckBox.AutomaticSize = Enum.AutomaticSize.None
+                    CheckBox.LayoutOrder = 0
+                    CheckBox.Parent = v26
+                    UIStroke_4 = Instance.new("UIStroke")
+                    UIStroke_4.Name = "UIStroke"
+                    UIStroke_4.Color = Color3.fromRGB(44, 44, 44)
+                    UIStroke_4.Transparency = 0
+                    UIStroke_4.Thickness = 1
+                    UIStroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                    UIStroke_4.Parent = CheckBox
+                    UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+                    UIAspectRatioConstraint_4.Name = "UIAspectRatioConstraint"
+                    UIAspectRatioConstraint_4.AspectRatio = 12
+                    UIAspectRatioConstraint_4.AspectType = Enum.AspectType.FitWithinMaxSize
+                    UIAspectRatioConstraint_4.Parent = v26
+                    vu28.Name = "UIGradient"
+                    vu28.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(30, 30, 30)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 20))
+                    })
+                    vu28.Rotation = 90
+                    vu28.Transparency = NumberSequence.new({
+                        NumberSequenceKeypoint.new(0, 0, 0),
+                        NumberSequenceKeypoint.new(1, 0, 0)
+                    })
+                    vu28.Offset = Vector2.new(0, 0)
+                    vu28.Parent = CheckBox
+                    v27.MouseButton1Click:Connect(function()
+                        vu29 = not vu29
+                        if vu29 then
+                            vu28.Color = ColorSequence.new({
+                                ColorSequenceKeypoint.new(0, Color3.fromRGB(202, 151, 202)),
+                                ColorSequenceKeypoint.new(1, Color3.fromRGB(136, 101, 136))
+                            })
+                        else
+                            vu28.Color = ColorSequence.new({
+                                ColorSequenceKeypoint.new(0, Color3.fromRGB(30, 30, 30)),
+                                ColorSequenceKeypoint.new(1, Color3.fromRGB(20, 20, 20))
+                            })
+                        end
+                        if pu25 then
+                            pu25(vu29)
+                        end
+                    end)
+                    return {}
+                end
+                function v21.AddSlider(_, p30, p31, p32, p33, pu34)
+                    local vu35 = p31 or 1
+                    local v36 = p33 or vu35
+                    local vu37 = Instance.new("Frame")
+                    local v38 = Instance.new("TextLabel")
+                    ValueText_2 = Instance.new("TextLabel")
+                    Fill = Instance.new("Frame")
+                    Trigger = Instance.new("TextButton")
+                    local vu39 = Instance.new("Frame")
+                    local vu40 = Instance.new("NumberValue")
+                    vu37.Name = "Slider"
+                    vu37.Position = UDim2.new(0, 0, 0, 0)
+                    vu37.Size = UDim2.new(1, 0, 0.9800000190734863, 0)
+                    vu37.AnchorPoint = Vector2.new(0, 0)
+                    vu37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    vu37.BackgroundTransparency = 1
+                    vu37.BorderSizePixel = 0
+                    vu37.ClipsDescendants = false
+                    vu37.Visible = true
+                    vu37.ZIndex = 1
+                    vu37.AutomaticSize = Enum.AutomaticSize.None
+                    vu37.LayoutOrder = # section:GetChildren()
+                    vu37.Parent = section
+                    v38.Name = "Text"
+                    v38.Position = UDim2.new(0.009999999776482582, 0, - 0.10100000351667404, 0)
+                    v38.Size = UDim2.new(0.8190000057220459, 0, 0.6000000238418579, 0)
+                    v38.AnchorPoint = Vector2.new(0, 0)
+                    v38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    v38.BackgroundTransparency = 1
+                    v38.BorderSizePixel = 1
+                    v38.Text = p30 or "Slider"
+                    v38.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    v38.TextScaled = true
+                    v38.TextSize = 8
+                    v38.Font = Enum.Font.SourceSansSemibold
+                    v38.TextTransparency = 0
+                    v38.Visible = true
+                    v38.ZIndex = 1
+                    v38.AutomaticSize = Enum.AutomaticSize.None
+                    v38.TextXAlignment = Enum.TextXAlignment.Left
+                    v38.TextYAlignment = Enum.TextYAlignment.Center
+                    v38.LayoutOrder = 0
+                    v38.Parent = vu37
+                    UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+                    UIAspectRatioConstraint_5.Name = "UIAspectRatioConstraint"
+                    UIAspectRatioConstraint_5.AspectRatio = 9
+                    UIAspectRatioConstraint_5.AspectType = Enum.AspectType.FitWithinMaxSize
+                    UIAspectRatioConstraint_5.Parent = vu37
+                    ValueText_2.Name = "ValueText"
+                    ValueText_2.Position = UDim2.new(0.8690000176429749, 0, - 0.10199999809265137, 0)
+                    ValueText_2.Size = UDim2.new(0.08799999952316284, 0, 0.6000000238418579, 0)
+                    ValueText_2.AnchorPoint = Vector2.new(0, 0)
+                    ValueText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    ValueText_2.BackgroundTransparency = 1
+                    ValueText_2.BorderSizePixel = 1
+                    ValueText_2.Text = v36
+                    ValueText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    ValueText_2.TextScaled = true
+                    ValueText_2.TextSize = 8
+                    ValueText_2.Font = Enum.Font.SourceSansSemibold
+                    ValueText_2.TextTransparency = 0
+                    ValueText_2.Visible = true
+                    ValueText_2.ZIndex = 1
+                    ValueText_2.AutomaticSize = Enum.AutomaticSize.None
+                    ValueText_2.TextXAlignment = Enum.TextXAlignment.Left
+                    ValueText_2.TextYAlignment = Enum.TextYAlignment.Center
+                    ValueText_2.LayoutOrder = 0
+                    ValueText_2.Parent = vu37
+                    Fill.Name = "Fill"
+                    Fill.Position = UDim2.new(0, 0, 0.6990000009536743, 0)
+                    Fill.Size = UDim2.new(1, 0, 0.25, 0)
+                    Fill.AnchorPoint = Vector2.new(0, 0)
+                    Fill.BackgroundColor3 = Color3.fromRGB(255, 191, 255)
+                    Fill.BackgroundTransparency = 0
+                    Fill.BorderSizePixel = 0
+                    Fill.ClipsDescendants = false
+                    Fill.Visible = true
+                    Fill.ZIndex = 1
+                    Fill.AutomaticSize = Enum.AutomaticSize.None
+                    Fill.LayoutOrder = 0
+                    Fill.Parent = vu37
+                    UICorner_4 = Instance.new("UICorner")
+                    UICorner_4.Name = "UICorner"
+                    UICorner_4.CornerRadius = UDim.new(0, 5)
+                    UICorner_4.Parent = Fill
+                    vu39.Name = "Move"
+                    vu39.Position = UDim2.new(0, 0, 0.6990000009536743, 0)
+                    vu39.Size = UDim2.new(1, 0, 1, 0)
+                    vu39.AnchorPoint = Vector2.new(0, 0)
+                    vu39.BackgroundColor3 = Color3.fromRGB(255, 191, 255)
+                    vu39.BackgroundTransparency = 0
+                    vu39.BorderSizePixel = 0
+                    vu39.ClipsDescendants = false
+                    vu39.Visible = true
+                    vu39.ZIndex = 1
+                    vu39.AutomaticSize = Enum.AutomaticSize.None
+                    vu39.LayoutOrder = 0
+                    vu39.Parent = Fill
+                    Trigger.Name = "Trigger"
+                    Trigger.Position = UDim2.new(0, 0, 0, 0)
+                    Trigger.Size = UDim2.new(1, 0, 1, 0)
+                    Trigger.AnchorPoint = Vector2.new(0, 0)
+                    Trigger.BackgroundColor3 = Color3.fromRGB(255, 191, 255)
+                    Trigger.BackgroundTransparency = 1
+                    Trigger.BorderSizePixel = 0
+                    Trigger.Text = ""
+                    Trigger.TextColor3 = Color3.fromRGB(27, 42, 53)
+                    Trigger.TextScaled = false
+                    Trigger.TextSize = 8
+                    Trigger.Font = Enum.Font.Legacy
+                    Trigger.TextTransparency = 0
+                    Trigger.Visible = true
+                    Trigger.ZIndex = 1
+                    Trigger.AutomaticSize = Enum.AutomaticSize.None
+                    Trigger.TextXAlignment = Enum.TextXAlignment.Center
+                    Trigger.TextYAlignment = Enum.TextYAlignment.Center
+                    Trigger.LayoutOrder = 0
+                    Trigger.Parent = Fill
+                    UIGradient_9 = Instance.new("UIGradient")
+                    UIGradient_9.Name = "UIGradient"
+                    UIGradient_9.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(44, 44, 44)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(31, 31, 31))
+                    })
+                    UIGradient_9.Rotation = 0
+                    UIGradient_9.Transparency = NumberSequence.new({
+                        NumberSequenceKeypoint.new(0, 0, 0),
+                        NumberSequenceKeypoint.new(1, 0, 0)
+                    })
+                    UIGradient_9.Offset = Vector2.new(0, 0)
+                    UIGradient_9.Parent = Fill
+                    local vu41 = game:GetService("TweenService")
+                    local v42 = game:GetService("UserInputService")
+                    local v43, v44, v45 = pairs(game:GetChildren())
+                    local v46 = nil
+                    local v47 = {}
+                    local vu48 = p32 or 100
+                    while true do
+                        local v49
+                        v45, v49 = v43(v44, v45)
+                        if v45 == nil then
+                            v49 = v46
+                            break
+                        end
+                        if v49.ClassName == "Players" then
+                            break
+                        end
+                    end
+                    if v49 then
+                        local vu50 = v49.LocalPlayer:GetMouse()
+                        local v51 = (v36 - vu35) / (vu48 - vu35)
+                        vu39.Size = UDim2.fromScale(v51, 1)
+                        ValueText_2.Text = tostring(v36)
+                        vu40.Value = v51
+                        local vu52 = TweenInfo.new(0.25, Enum.EasingStyle.Exponential)
+                        local vu53 = false
+                        local function vu56()
+                            local v54 = math.clamp((vu50.X - vu37.AbsolutePosition.X) / vu37.AbsoluteSize.X, 0, 1)
+                            local v55 = math.round(v54 * (vu48 - vu35) + vu35)
+                            ValueText_2.Text = tostring(v55)
+                            if vu40.Value ~= v54 then
+                                vu41:Create(vu39, vu52, {
+                                    Size = UDim2.fromScale(v54, 1)
+                                }):Play()
+                            end
+                            vu40.Value = v54
+                            if pu34 then
+                                pu34(v55)
+                            end
+                        end
+                        local function v57()
+                            vu53 = true
+                            while vu53 do
+                                vu56()
+                                task.wait()
+                            end
+                        end
+                        Trigger.MouseButton1Down:Connect(v57)
+                        v42.InputEnded:Connect(function(p58)
+                            if p58.UserInputType == Enum.UserInputType.MouseButton1 or p58.UserInputType == Enum.UserInputType.Touch then
+                                vu53 = false
+                            end
+                        end)
+                        return v47
+                    end
+                    warn("Players service not found!")
+                end
+                function v21.AddDropdown(_, p59, pu60, pu61, p62, pu63)
+                    local vu64 = {
+                        Options = {},
+                        Selected = p62 or ""
+                    }
+                    local v65 = Instance.new("Frame")
+                    v65.Name = "Dropdown"
+                    v65.Position = UDim2.new(0, 0, 0, 0)
+                    v65.Size = UDim2.new(1, 0, 0.18, 0)
+                    v65.BackgroundTransparency = 1
+                    v65.BorderSizePixel = 0
+                    v65.LayoutOrder = # section:GetChildren()
+                    v65.Parent = section
+                    local v66 = Instance.new("UIAspectRatioConstraint")
+                    v66.AspectType = Enum.AspectType.ScaleWithParentSize
+                    v66.AspectRatio = 6
+                    v66.Parent = v65
+                    local v67 = Instance.new("TextLabel")
+                    v67.Name = "Text"
+                    v67.Position = UDim2.new(0.009, 0, - 0.102, 0)
+                    v67.Size = UDim2.new(0.8, 0, 0.4, 0)
+                    v67.BackgroundTransparency = 1
+                    v67.Text = p59 or "Dropdown"
+                    v67.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    v67.TextScaled = true
+                    v67.Font = Enum.Font.SourceSansSemibold
+                    v67.TextXAlignment = Enum.TextXAlignment.Left
+                    v67.Parent = v65
+                    local v68 = Instance.new("Frame")
+                    v68.Name = "TopBar"
+                    v68.Position = UDim2.new(0.1, 0, 0.239, 0)
+                    v68.Size = UDim2.new(0.8, 0, 0.58, 0)
+                    v68.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    v68.BorderSizePixel = 0
+                    v68.Parent = v65
+                    local v69 = Instance.new("UIGradient")
+                    v69.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(26, 26, 26)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(22, 22, 22))
+                    })
+                    v69.Rotation = 90
+                    v69.Parent = v68
+                    local v70 = Instance.new("UIStroke")
+                    v70.Color = Color3.fromRGB(40, 40, 40)
+                    v70.Parent = v68
+                    local vu71 = Instance.new("TextLabel")
+                    vu71.Name = "ValueText"
+                    vu71.Position = UDim2.new(0, 0, 0, 0)
+                    vu71.Size = UDim2.new(0.82, 0, 0.699, 0)
+                    vu71.BackgroundTransparency = 1
+                    vu71.Text = p62 or "ValueText"
+                    vu71.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    vu71.TextScaled = true
+                    vu71.Font = Enum.Font.SourceSansSemibold
+                    vu71.TextXAlignment = Enum.TextXAlignment.Center
+                    vu71.TextYAlignment = Enum.TextYAlignment.Center
+                    vu71.Active = false
+                    vu71.Parent = v68
+                    local v72 = Instance.new("TextLabel")
+                    v72.Name = "Tex"
+                    v72.Position = UDim2.new(0.869, 0, 0, 0)
+                    v72.Size = UDim2.new(0.09, 0, 0.699, 0)
+                    v72.BackgroundTransparency = 1
+                    v72.Text = ">"
+                    v72.TextColor3 = Color3.fromRGB(255, 255, 255)
+                    v72.TextScaled = true
+                    v72.Font = Enum.Font.SourceSansSemibold
+                    v72.TextXAlignment = Enum.TextXAlignment.Center
+                    v72.TextYAlignment = Enum.TextYAlignment.Center
+                    v72.Active = false
+                    v72.Parent = v68
+                    local vu73 = Instance.new("Frame")
+                    vu73.Name = "DownBar"
+                    vu73.Position = UDim2.new(0.1, 0, 1, 0)
+                    vu73.Size = UDim2.new(0.7, 0, 0, 0)
+                    vu73.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    vu73.Visible = false
+                    vu73.ZIndex = 4
+                    vu73.Parent = v65
+                    local v74 = Instance.new("UIStroke")
+                    v74.Color = Color3.fromRGB(37, 37, 37)
+                    v74.Parent = vu73
+                    local v75 = Instance.new("UIGradient")
+                    v75.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(26, 26, 26)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(22, 22, 22))
+                    })
+                    v75.Rotation = 90
+                    v75.Parent = vu73
+                    local v76 = Instance.new("ScrollingFrame")
+                    v76.Name = "Scrolling"
+                    v76.Size = UDim2.new(1, 0, 1, 0)
+                    v76.BackgroundTransparency = 1
+                    v76.BorderSizePixel = 0
+                    v76.ScrollBarThickness = 1
+                    v76.AutomaticCanvasSize = Enum.AutomaticSize.Y
+                    v76.Parent = vu73
+                    local v77 = Instance.new("UIListLayout")
+                    v77.Padding = UDim.new(0, 3)
+                    v77.Parent = v76
+                    local v78 = Instance.new("TextButton")
+                    v78.Name = "Trigger"
+                    v78.Size = UDim2.new(1, 0, 1, 0)
+                    v78.BackgroundTransparency = 1
+                    v78.Text = ""
+                    v78.Parent = v68
+                    v78.ZIndex = 9
+                    v78.MouseButton1Click:Connect(function()
+                        vu73.Visible = not vu73.Visible
+                        if vu73.Visible then
+                            local v79 = # pu61
+                            vu73.Size = UDim2.new(1, 0, 0, math.min(v79 * (30 + 3), 200))
+                        else
+                            vu73.Size = UDim2.new(1, 0, 0, 0)
+                        end
+                    end)
+                    local v80, v81, v82 = ipairs(pu61 or {
+                        "Option"
+                    })
+                    local vu83 = vu73
+                    while true do
+                        local vu84
+                        v82, vu84 = v80(v81, v82)
+                        if v82 == nil then
+                            break
+                        end
+                        local vu85 = Instance.new("TextButton")
+                        vu85.Name = "Option"
+                        vu85.Size = UDim2.new(1, 0, 0, 20)
+                        vu85.BackgroundTransparency = 1
+                        vu85.Text = vu84
+                        vu85.TextColor3 = Color3.fromRGB(255, 255, 255)
+                        vu85.TextScaled = true
+                        vu85.Font = Enum.Font.SourceSansSemibold
+                        vu85.ZIndex = 8
+                        vu85.Parent = v76
+                        vu64.Options[vu84] = false
+                        vu85.MouseButton1Click:Connect(function()
+                            if pu60 then
+                                vu64.Options[vu84] = not vu64.Options[vu84]
+                                vu85.BackgroundTransparency = vu64.Options[vu84] and 0 or 1
+                                if pu63 then
+                                    pu63(vu64.Options)
+                                end
+                            else
+                                vu71.Text = vu84
+                                vu64.Selected = vu84
+                                vu83.Visible = false
+                                if pu63 then
+                                    pu63(vu64.Selected)
+                                end
+                            end
+                        end)
+                    end
+                    vu64.TopBar = v68
+                    vu64.DownBar = vu83
+                    vu64.ValueText = vu71
+                    vu64.Frame = v65
+                    return vu64
+                end
+                function v21.AddListBox(_, p86, pu87)
+                    local v88 = Instance.new("Frame")
+                    v88.Name = "ListBox"
+                    v88.Position = UDim2.new(0, 0, 0, 0)
+                    v88.Size = UDim2.new(1, 0, 0.7, 0)
+                    v88.AnchorPoint = Vector2.new(0, 0)
+                    v88.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+                    v88.BackgroundTransparency = 1
+                    v88.LayoutOrder = # section:GetChildren()
+                    v88.Parent = section
+                    local v89 = Instance.new("UIAspectRatioConstraint")
+                    v89.AspectType = Enum.AspectType.FitWithinMaxSize
+                    v89.AspectRatio = 1
+                    v89.Parent = v88
+                    local v90 = Instance.new("ScrollingFrame")
+                    v90.Name = "Scrolling"
+                    v90.Position = UDim2.new(0.1289999932050705, 0, 0, 0)
+                    v90.Size = UDim2.new(1, 0, 1.1, 0)
+                    v90.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    v90.BorderSizePixel = 0
+                    v90.CanvasSize = UDim2.new(0, 0, 2, 0)
+                    v90.ScrollBarThickness = 1
+                    v90.Parent = v88
+                    local v91 = Instance.new("UIListLayout")
+                    v91.FillDirection = Enum.FillDirection.Vertical
+                    v91.Padding = UDim.new(0, 3)
+                    v91.Parent = v90
+                    local v92 = Instance.new("UICorner")
+                    v92.CornerRadius = UDim.new(0, 4)
+                    v92.Parent = v90
+                    local v93 = Instance.new("UIGradient")
+                    v93.Color = ColorSequence.new({
+                        ColorSequenceKeypoint.new(0, Color3.fromRGB(21, 21, 21)),
+                        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))
+                    })
+                    v93.Rotation = 90
+                    v93.Parent = v90
+                    local v94 = Instance.new("UIStroke")
+                    v94.Color = Color3.fromRGB(44, 44, 44)
+                    v94.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+                    v94.Parent = v90
+                    local v95 = Instance.new("TextButton")
+                    v95.Name = "ListButton"
+                    v95.Size = UDim2.new(1, 0, 0.05, 0)
+                    v95.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+                    v95.BackgroundTransparency = 0.9
+                    v95.TextColor3 = Color3.fromRGB(127, 127, 127)
+                    v95.TextScaled = true
+                    v95.Font = Enum.Font.Code
+                    v95.Parent = nil
+                    local v96 = Instance.new("UICorner")
+                    v96.CornerRadius = UDim.new(0, 4)
+                    v96.Parent = v95
+                    local v97, v98, v99 = ipairs(p86)
+                    while true do
+                        local vu100
+                        v99, vu100 = v97(v98, v99)
+                        if v99 == nil then
+                            break
+                        end
+                        local v101 = v95:Clone()
+                        v101.Text = tostring(vu100)
+                        v101.Parent = v90
+                        v101.MouseButton1Click:Connect(function()
+                            pcall(function()
+                                pu87(vu100)
+                            end)
+                        end)
+                    end
+                    return v88
+                end
+                return v21
+            end
+            SwitchClick.MouseButton1Click:Connect(function()
+                local v102, v103, v104 = pairs(vu13.Container:GetChildren())
+                while true do
+                    local v105
+                    v104, v105 = v102(v103, v104)
+                    if v104 == nil then
+                        break
+                    end
+                    v105.Visible = v105 == vu14.Container
+                end
+                local v106, v107, v108 = pairs(vu13.TabScroll:GetChildren())
+                while true do
+                    local v109
+                    v108, v109 = v106(v107, v108)
+                    if v108 == nil then
+                        break
+                    end
+                    if v109:FindFirstChild("Text") then
+                        v109.Text.TextColor3 = v109 == vu18 and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(127, 127, 127)
+                    end
+                end
+            end)
+            return vu14
+        end
+        return v2
+    end
+}):AddWindow("CludeHub")
+local v111 = v110:AddTab("Rage")
+local v112 = v111:AddSection("Anti Aim", "left")
+game:GetService("Players")
+game:GetService("RunService")
+local v113 = game:GetService("Players")
+local vu114 = game:GetService("RunService")
+local vu115 = v113.LocalPlayer
+local vu116 = nil
+local vu117 = nil
+local vu118 = nil
+local vu119 = nil
+local vu120 = false
+local vu121 = "None"
+local vu122 = 10
+local vu123 = nil
+local vu124 = false
+local vu125 = "Disabled"
+local vu126 = 30
+local vu127 = nil
+local vu128 = false
+local vu129 = 10
+local vu130 = nil
+local function vu131()
+    vu116 = vu115.Character or vu115.CharacterAdded:Wait()
+    vu117 = vu116:WaitForChild("Humanoid")
+    vu118 = vu116:WaitForChild("HumanoidRootPart")
+    vu119 = vu116:WaitForChild("Head")
+end
+vu131()
+vu115.CharacterAdded:Connect(function()
+    task.wait(1)
+    vu131()
+end)
+v112:AddToggle("Anti Aim", false, function(p132)
+    vu120 = p132
+    if p132 then
+        if vu123 then
+            vu123:Disconnect()
+        end
+        vu123 = vu114.RenderStepped:Connect(function()
+            if vu120 and (vu116 and vu117) then
+                local v133 = nil
+                if vu117.RigType ~= Enum.HumanoidRigType.R15 then
+                    local v134 = vu116:FindFirstChild("Torso")
+                    if v134 then
+                        v133 = v134:FindFirstChild("Neck")
+                    end
+                else
+                    local v135 = vu116:FindFirstChild("UpperTorso")
+                    if v135 then
+                        v133 = v135:FindFirstChild("Neck")
+                    end
+                end
+                if v133 then
+                    if not v133:GetAttribute("BaseC0") then
+                        v133:SetAttribute("BaseC0", v133.C0)
+                    end
+                    local v136 = v133:GetAttribute("BaseC0") or v133.C0
+                    local v137 = 0
+                    if vu121 ~= "Down" then
+                        if vu121 ~= "Up" then
+                            if vu121 == "Jitter" then
+                                v137 = math.sin(tick() * vu122) * 30
+                            end
+                        else
+                            v137 = - 50
+                        end
+                    else
+                        v137 = 50
+                    end
+                    v133.C0 = v136 * CFrame.Angles(math.rad(v137), 0, 0)
+                end
+            else
+                return
+            end
+        end)
+        if vu127 then
+            vu127:Disconnect()
+        end
+        if vu124 then
+            vu127 = vu114.RenderStepped:Connect(function()
+                if vu120 and vu118 then
+                    local v138 = tick() * vu126
+                    local v139 = 0
+                    if vu125 ~= "Center" then
+                        if vu125 == "Random" then
+                            v139 = math.random(- 180, 180)
+                        end
+                    else
+                        v139 = math.sin(v138) * 50
+                    end
+                    vu118.CFrame = CFrame.new(vu118.Position) * CFrame.Angles(0, math.rad(v139), 0)
+                end
+            end)
+        end
+        if vu130 then
+            vu130:Disconnect()
+        end
+        if vu128 then
+            local vu140 = 0
+            vu130 = vu114.RenderStepped:Connect(function(p141)
+                if vu120 and vu118 then
+                    vu140 = (vu140 + p141 * vu129 * 2) % 360
+                    vu118.CFrame = CFrame.new(vu118.Position) * CFrame.Angles(0, math.rad(vu140), 0)
+                end
+            end)
+        end
+    else
+        if vu123 then
+            vu123:Disconnect()
+        end
+        if vu127 then
+            vu127:Disconnect()
+        end
+        if vu130 then
+            vu130:Disconnect()
+        end
+    end
+end)
+v112:AddDropdown("Pitch", false, {
+    "None",
+    "Down",
+    "Up",
+    "Jitter"
+}, "None", function(p142)
+    vu121 = p142
+end)
+v112:AddSlider("Pitch Jitter Speed", 1, 200, 10, function(p143)
+    vu122 = p143
+end)
+v112:AddToggle("Yaw Jitter", false, function(p144)
+    vu124 = p144
+    if vu120 then
+        if vu127 then
+            vu127:Disconnect()
+        end
+        if p144 then
+            vu127 = vu114.RenderStepped:Connect(function()
+                if vu118 then
+                    local v145 = tick() * vu126
+                    local v146 = 0
+                    if vu125 ~= "Center" then
+                        if vu125 == "Random" then
+                            v146 = math.random(- 180, 180)
+                        end
+                    else
+                        v146 = math.sin(v145) * 50
+                    end
+                    vu118.CFrame = CFrame.new(vu118.Position) * CFrame.Angles(0, math.rad(v146), 0)
+                end
+            end)
+        end
+    end
+end)
+v112:AddDropdown("Yaw Jitter Mode", false, {
+    "Disabled",
+    "Center",
+    "Random"
+}, "Disabled", function(p147)
+    vu125 = p147
+end)
+v112:AddSlider("Yaw Jitter Speed", 1, 200, 30, function(p148)
+    vu126 = p148
+end)
+v112:AddToggle("Spin", false, function(p149)
+    vu128 = p149
+    if vu120 then
+        if vu130 then
+            vu130:Disconnect()
+        end
+        if p149 then
+            local vu150 = 0
+            vu130 = vu114.RenderStepped:Connect(function(p151)
+                if vu118 then
+                    vu150 = (vu150 + p151 * vu129 * 2) % 360
+                    vu118.CFrame = CFrame.new(vu118.Position) * CFrame.Angles(0, math.rad(vu150), 0)
+                end
+            end)
+        end
+    end
+end)
+v112:AddSlider("Spin Speed", 1, 200, 10, function(p152)
+    vu129 = p152
+end)
+local v153 = v111:AddSection("General", "right")
+local vu154 = game:GetService("Players")
+local vu155 = game:GetService("RunService")
+local vu156 = workspace.CurrentCamera
+game:GetService("Debris")
+local vu157 = vu154.LocalPlayer
+getgenv().SilentAim = getgenv().SilentAim or false
+local vu158 = getgenv().SilentAim
+local vu159 = false
+local vu160 = true
+local vu161 = false
+local vu162 = Color3.fromRGB(205, 243, 255)
+local vu163 = Vector3.new(300, 300, 0.1)
+local vu164 = Vector3.new(4, 4, 4)
+local vu165 = Color3.fromRGB(255, 0, 0)
+local function vu167(p166)
+    return not vu159 and true or (not (vu157.Team and p166.Team) and true or vu157.Team ~= p166.Team)
+end
+local function vu170(p168, p169)
+    if p168 then
+        p168.Size = p169
+        p168.Transparency = 1
+        p168.CanCollide = false
+        p168.Color = vu165
+    end
+end
+local v171, v172, v173 = ipairs(vu154:GetPlayers())
+local vu174 = vu159
+local vu175 = 600
+local vu176 = 1.4
+local vu177 = 1.3
+local function vu184(p178)
+    if not (p178 and p178.Parent) then
+        return false
+    end
+    local v179 = vu156.CFrame.Position
+    local v180 = p178.Position - v179
+    local v181 = Ray.new(v179, v180.Unit * v180.Magnitude)
+    local v182 = {
+        vu157.Character,
+        vu156
+    }
+    local v183 = workspace:FindPartOnRayWithIgnoreList(v181, v182)
+    return (not v183 or v183 == p178) and true or v183:IsDescendantOf(p178.Parent)
+end
+local vu185 = true
+local vu186 = true
+while true do
+    local v187, v188 = v171(v172, v173)
+    if v187 == nil then
+        break
+    end
+    v173 = v187
+    if v188 ~= vu157 and v188.Character and v188.Character:FindFirstChild("Head") then
+        vu170(v188.Character.HumanoidRootPart, vu164)
+    end
+    v188.CharacterAdded:Connect(function(p189)
+        vu170(p189:WaitForChild("HumanoidRootPart"), vu164)
+    end)
+end
+vu154.PlayerAdded:Connect(function(p190)
+    p190.CharacterAdded:Connect(function(p191)
+        vu170(p191:WaitForChild("HumanoidRootPart"), vu164)
+    end)
+end)
+local function vu198()
+    vu155.RenderStepped:Connect(function()
+        local v192 = vu154
+        local v193, v194, v195 = ipairs(v192:GetPlayers())
+        while true do
+            local v196
+            v195, v196 = v193(v194, v195)
+            if v195 == nil then
+                break
+            end
+            if v196 ~= vu157 and v196.Character and v196.Character:FindFirstChild("HumanoidRootPart") then
+                local v197 = v196.Character.HumanoidRootPart
+                if vu158 and (vu167(v196) and (not vu160 or vu184(v197))) then
+                    vu170(v197, vu163)
+                else
+                    vu170(v197, vu164)
+                end
+            end
+        end
+    end)
+end
+local function vu219(p199)
+    local function vu205(p200)
+        local v201 = vu156.CFrame.Position
+        local v202 = p200.Position - v201
+        local v203 = RaycastParams.new()
+        v203.FilterType = Enum.RaycastFilterType.Blacklist
+        v203.FilterDescendantsInstances = {
+            vu157.Character
+        }
+        local v204 = workspace:Raycast(v201, v202, v203)
+        if v204 then
+            return v204.Instance:IsDescendantOf(p200.Parent)
+        else
+            return false
+        end
+    end
+    local function vu215()
+        local v206 = math.huge
+        local v207 = vu154
+        local v208, v209, v210 = ipairs(v207:GetPlayers())
+        local v211 = nil
+        while true do
+            local v212
+            v210, v212 = v208(v209, v210)
+            if v210 == nil then
+                break
+            end
+            if v212 ~= vu157 and v212.Character and (v212.Character:FindFirstChild("Head") and vu167(v212)) then
+                local v213 = v212.Character.Head
+                local v214 = (v213.Position - vu156.CFrame.Position).Magnitude
+                if v214 < v206 and v214 <= vu175 then
+                    if vu205(v213) then
+                        v211 = v212
+                        v206 = v214
+                    end
+                end
+            end
+        end
+        return v211
+    end
+    p199.MouseButton1Click:Connect(function()
+        if vu158 and vu185 then
+            vu185 = false
+            local v216 = vu215()
+            if v216 and v216.Character and v216.Character:FindFirstChild("Head") then
+                local v217 = v216.Character.Head
+                local v218 = vu156.CFrame
+                vu156.CFrame = CFrame.new(vu156.CFrame.Position, v217.Position)
+                vu155.RenderStepped:Wait()
+                task.wait(0.001)
+                vu156.CFrame = v218
+            end
+            task.delay(vu176, function()
+                vu185 = true
+            end)
+        end
+    end)
+end
+local function vu228(p220, p221)
+    local v222 = Instance.new("Part")
+    v222.Size = Vector3.new(0.9, 0.5, 1)
+    v222.Color = vu162
+    v222.Material = Enum.Material.Neon
+    v222.Anchored = false
+    v222.CanCollide = false
+    v222.CFrame = p220.CFrame
+    v222.CastShadow = false
+    v222.Parent = workspace
+    local v223 = Instance.new("Attachment", v222)
+    local v224 = Instance.new("Attachment", v222)
+    v223.Position = Vector3.new(0, 0, - 0.15)
+    v224.Position = Vector3.new(0, 0, 0.15)
+    local vu225 = Instance.new("Trail")
+    vu225.Attachment0 = v223
+    vu225.Attachment1 = v224
+    vu225.FaceCamera = true
+    vu225.Lifetime = 10
+    vu225.LightEmission = 1
+    vu225.LightInfluence = 0
+    vu225.Brightness = 99999999
+    vu225.Color = ColorSequence.new(vu162)
+    vu225.Transparency = NumberSequence.new(0)
+    vu225.WidthScale = NumberSequence.new({
+        NumberSequenceKeypoint.new(0, 2),
+        NumberSequenceKeypoint.new(1, 2)
+    })
+    vu225.Enabled = true
+    vu225.Parent = v222
+    local v226
+    if p221 and vu184(p221) then
+        v226 = (p221.Position - p220.Position).Unit * 600
+    else
+        v226 = p220.CFrame.LookVector * 600
+    end
+    local v227 = Instance.new("BodyVelocity")
+    v227.MaxForce = Vector3.new(100000, 100000, 100000)
+    v227.Velocity = v226
+    v227.Parent = v222
+    task.delay(13, function()
+        if vu225 then
+            vu225:Destroy()
+        end
+    end)
+end
+local function vu235(p229)
+    local v230, v231, v232 = ipairs(p229:GetChildren())
+    while true do
+        local v233
+        v232, v233 = v230(v231, v232)
+        if v232 == nil then
+            break
+        end
+        if v233:IsA("BasePart") and v233.Name == "Muz" then
+            if v233:IsDescendantOf(workspace) then
+                return v233
+            end
+        else
+            local v234 = vu235(v233)
+            if v234 then
+                return v234
+            end
+        end
+    end
+    return nil
+end
+local function vu238(p236)
+    repeat
+        local v237 = vu235(p236)
+        task.wait(0.3)
+    until v237 and v237:IsDescendantOf(workspace)
+    return v237
+end
+local function v249(pu239)
+    task.spawn(function()
+        local vu240 = vu238(pu239)
+        local v241, v242 = pcall(function()
+            return vu157:WaitForChild("PlayerGui"):WaitForChild("MobileControls"):WaitForChild("Frame"):WaitForChild("FireButton")
+        end)
+        if v241 and v242 then
+            v242.MouseButton1Click:Connect(function()
+                if not (vu161 and (vu186 and vu240) and vu240:IsDescendantOf(workspace)) then
+                    return
+                end
+                vu186 = false
+                local v243 = vu154
+                local v244, v245, v246 = ipairs(v243:GetPlayers())
+                local v247 = nil
+                while true do
+                    local v248
+                    v246, v248 = v244(v245, v246)
+                    if v246 == nil then
+                        break
+                    end
+                    if v248 ~= vu157 and v248.Character and (v248.Character:FindFirstChild("Head") and (vu167(v248) and vu184(v248.Character.Head))) then
+                        v247 = v248.Character.Head
+                        break
+                    end
+                end
+                vu228(vu240, v247)
+                task.delay(vu177, function()
+                    vu186 = true
+                end)
+            end)
+        end
+    end)
+end
+if vu157.Character then
+    v249(vu157.Character)
+end
+vu157.CharacterAdded:Connect(v249)
+task.spawn(function()
+    local vu250 = nil
+    pcall(function()
+        vu250 = vu157:WaitForChild("PlayerGui"):WaitForChild("MobileControls"):WaitForChild("Frame"):WaitForChild("FireButton")
+    end)
+    if vu250 then
+        warn("\239\191\189\239\191\189\239\191\189\239\191\189\239\191\189\239\191\189 FireButton found \226\128\148 Flick Silent Aim enabled.")
+        vu219(vu250)
+    else
+        warn("\239\191\189\239\191\189\239\191\189\239\191\189\239\191\189\239\191\189 FireButton not found \226\128\148 Hitbox Silent Aim enabled.")
+        vu198()
+    end
+end)
+v153:AddToggle("Silent Aim", false, function(p251)
+    vu158 = p251
+    getgenv().SilentAim = p251
+end)
+v153:AddToggle("Auto headshot", false, function(p252)
+    vu160 = p252
+end)
+v153:AddToggle("Team Check", false, function(p253)
+    vu174 = p253
+end)
+local v254 = v110:AddTab("Aimbot")
+local v255 = v254:AddSection("General", "left")
+local vu256 = game:GetService("Players")
+local v257 = game:GetService("RunService")
+local vu258 = workspace.CurrentCamera
+local vu259 = vu256.LocalPlayer
+getgenv().AimbotEnabled = false
+getgenv().AimbotMode = "Free for all"
+getgenv().AimbotPart = "Head"
+getgenv().AimbotFOV = 200
+getgenv().AimbotSpeed = 1
+getgenv().ShowFovCircle = false
+getgenv().FovCircleThickness = 1
+getgenv().FovCircleColor = Color3.fromRGB(255, 255, 255)
+local vu260 = Drawing.new("Circle")
+vu260.Visible = false
+vu260.Radius = getgenv().AimbotFOV
+vu260.Color = getgenv().FovCircleColor
+vu260.Thickness = getgenv().FovCircleThickness
+vu260.NumSides = 100
+vu260.Filled = false
+local function vu263(p261)
+    if p261 then
+        local v262 = getgenv().AimbotPart or "Head"
+        if v262 == "Head" then
+            return p261:FindFirstChild("Head")
+        elseif v262 == "Chest" then
+            return p261:FindFirstChild("UpperTorso") or p261:FindFirstChild("Torso")
+        elseif v262 == "Stomach" then
+            return p261:FindFirstChild("LowerTorso")
+        elseif v262 == "Arms" then
+            return p261:FindFirstChild("RightUpperArm") or p261:FindFirstChild("LeftUpperArm")
+        elseif v262 == "Legs" then
+            return p261:FindFirstChild("RightUpperLeg") or p261:FindFirstChild("LeftUpperLeg")
+        else
+            return p261:FindFirstChild("Head")
+        end
+    else
+        return nil
+    end
+end
+local function vu270(p264)
+    if not (p264 and p264.Parent) then
+        return false
+    end
+    local v265 = vu258.CFrame.Position
+    local v266 = p264.Position - v265
+    if v266.Magnitude <= 0 then
+        return true
+    end
+    local v267 = Ray.new(v265, v266.Unit * v266.Magnitude)
+    local v268 = {
+        vu259.Character,
+        vu258
+    }
+    local v269 = workspace:FindPartOnRayWithIgnoreList(v267, v268)
+    return (not v269 or v269 == p264) and true or v269:IsDescendantOf(p264.Parent)
+end
+local function vu284()
+    local v271 = math.huge
+    local v272 = Vector2.new(vu258.ViewportSize.X / 2, vu258.ViewportSize.Y / 2)
+    local v273 = vu256
+    local v274, v275, v276 = ipairs(v273:GetPlayers())
+    local v277 = nil
+    while true do
+        local v278
+        v276, v278 = v274(v275, v276)
+        if v276 == nil then
+            break
+        end
+        if v278 ~= vu259 and (getgenv().AimbotMode == "Free for all" or v278.Team ~= vu259.Team) then
+            local v279 = v278.Character
+            if v279 and (v279:FindFirstChild("Humanoid") and v279.Humanoid.Health > 0) then
+                local v280 = vu263(v279)
+                if v280 then
+                    local v281, v282 = vu258:WorldToViewportPoint(v280.Position)
+                    if v282 and vu270(v280) then
+                        local v283 = (Vector2.new(v281.X, v281.Y) - v272).Magnitude
+                        if v283 < getgenv().AimbotFOV then
+                            if v283 < v271 then
+                                v277 = v278
+                                v271 = v283
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return v277
+end
+v257.RenderStepped:Connect(function()
+    vu260.Position = Vector2.new(vu258.ViewportSize.X / 2, vu258.ViewportSize.Y / 2)
+    vu260.Radius = getgenv().AimbotFOV
+    vu260.Visible = getgenv().ShowFovCircle
+    vu260.Color = getgenv().FovCircleColor
+    vu260.Thickness = getgenv().FovCircleThickness
+    if getgenv().AimbotEnabled then
+        local v285 = vu284()
+        local v286 = v285 and v285.Character and (v285.Character:FindFirstChild("Humanoid") and (v285.Character.Humanoid.Health > 0 and vu263(v285.Character)))
+        if v286 then
+            local v287 = vu258.CFrame.Position
+            local v288 = (v286.Position - v287).Unit
+            local v289 = CFrame.new(v287, v287 + v288)
+            vu258.CFrame = vu258.CFrame:Lerp(v289, getgenv().AimbotSpeed / 100)
+        end
+    end
+end)
+v255:AddToggle("Aim assist", false, function(p290)
+    getgenv().AimbotEnabled = p290
+end)
+v255:AddDropdown("Mode", false, {
+    "Free for all",
+    "Team support"
+}, "Free for all", function(p291)
+    getgenv().AimbotMode = p291
+end)
+v255:AddDropdown("Hitboxes", false, {
+    "Head",
+    "Chest",
+    "Stomach",
+    "Arms",
+    "Legs"
+}, "Head", function(p292)
+    getgenv().AimbotPart = p292
+end)
+v255:AddDropdown("Multipoint", false, {
+    "Off",
+    "Low",
+    "Medium",
+    "High"
+}, "Off", function(p293)
+    getgenv().AimbotMultipoint = p293
+end)
+v255:AddSlider("Aim speed", 50, 1, 100, function(p294)
+    getgenv().AimbotSpeed = p294
+end)
+local v295 = v254:AddSection("Fov", "right")
+v295:AddToggle("Show FOV Circle", false, function(p296)
+    getgenv().ShowFovCircle = p296
+end)
+v295:AddSlider("Aim FOV", 200, 50, 500, function(p297)
+    getgenv().AimbotFOV = p297
+end)
+v295:AddSlider("Circle Thickness", 1, 1, 10, function(p298)
+    getgenv().FovCircleThickness = p298
+end)
+v295:AddDropdown("Circle Color", false, {
+    "White",
+    "Red",
+    "Green",
+    "Blue",
+    "Pink",
+    "Yellow"
+}, "White", function(p299)
+    local v300 = {
+        White = Color3.fromRGB(255, 255, 255),
+        Red = Color3.fromRGB(255, 0, 0),
+        Green = Color3.fromRGB(0, 255, 0),
+        Blue = Color3.fromRGB(0, 0, 255),
+        Pink = Color3.fromRGB(255, 0, 255),
+        Yellow = Color3.fromRGB(255, 255, 0)
+    }
+    getgenv().FovCircleColor = v300[p299]
+end)
+local v301 = v110:AddTab("Visual")
+local v302 = v301:AddSection("Misc", "left")
+local v303 = game:GetService("Players")
+local v304 = game:GetService("UserInputService")
+local vu305 = workspace.CurrentCamera
+local vu306 = v303.LocalPlayer
+local vu307 = false
+local vu308 = 12
+local vu309 = "Always on"
+local vu310 = vu306.CameraMaxZoomDistance
+local vu311 = vu306.CameraMinZoomDistance
+local vu312 = false
+local vu313 = 170
+local vu314 = vu305.FieldOfView
+local function vu315()
+    if vu306.Character and vu306.Character:FindFirstChild("Humanoid") then
+        task.wait(0.1)
+        if vu307 then
+            vu306.CameraMode = Enum.CameraMode.Classic
+            vu306.CameraMaxZoomDistance = vu308
+            vu306.CameraMinZoomDistance = vu308
+        else
+            vu306.CameraMode = Enum.CameraMode.LockFirstPerson
+            vu306.CameraMaxZoomDistance = vu310
+            vu306.CameraMinZoomDistance = vu311
+        end
+    end
+end
+local function vu316()
+    if vu312 then
+        vu305.FieldOfView = vu313
+    else
+        vu305.FieldOfView = vu314
+    end
+end
+v302:AddToggle("Thirdperson", false, function(p317)
+    vu307 = p317
+    if p317 and vu309 == "Always on" then
+        vu315()
+    elseif not p317 then
+        vu315()
+    end
+end)
+v302:AddSlider("Thirdperson Distance", vu308, 5, 30, function(p318)
+    vu308 = p318
+    if vu307 then
+        vu315()
+    end
+end)
+v302:AddDropdown("Thirdperson Activation", false, {
+    "Always on",
+    "K",
+    "O",
+    "P"
+}, "Always on", function(p319)
+    vu309 = p319
+    if vu307 then
+        if p319 == "Always on" then
+            vu315()
+        else
+            vu307 = false
+            vu315()
+        end
+    end
+end)
+v302:AddToggle("FOV", false, function(p320)
+    vu312 = p320
+    vu316()
+end)
+v302:AddSlider("FOV Value", vu313, 70, 170, function(p321)
+    vu313 = p321
+    if vu312 then
+        vu316()
+    end
+end)
+v304.InputBegan:Connect(function(p322, p323)
+    if not p323 then
+        if vu309 ~= "Always on" and p322.KeyCode == Enum.KeyCode[vu309] then
+            vu307 = not vu307
+            vu315()
+        end
+    end
+end)
+vu306.CharacterAdded:Connect(function(p324)
+    p324:WaitForChild("Humanoid")
+    task.wait(0.5)
+    if vu307 and vu309 == "Always on" then
+        vu315()
+    end
+end)
+local v325 = v301:AddSection("Misc", "right")
+local vu326 = game:GetService("Lighting")
+local vu327 = game:GetService("Workspace")
+local vu328 = {
+    red = Color3.fromRGB(255, 0, 0),
+    orange = Color3.fromRGB(255, 165, 0),
+    yellow = Color3.fromRGB(255, 255, 0),
+    green = Color3.fromRGB(0, 255, 0),
+    skyblue = Color3.fromRGB(135, 206, 235),
+    blue = Color3.fromRGB(0, 0, 255),
+    violet = Color3.fromRGB(238, 130, 238),
+    pink = Color3.fromRGB(255, 192, 203),
+    white = Color3.fromRGB(255, 255, 255),
+    brown = Color3.fromRGB(139, 69, 19)
+}
+v325:AddToggle("World color", false, function(p329)
+    if p329 then
+        vu326.Ambient = Color3.fromRGB(200, 200, 200)
+    else
+        vu326.Ambient = Color3.fromRGB(128, 128, 128)
+    end
+end)
+v325:AddDropdown("", false, {
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "skyblue",
+    "blue",
+    "violet",
+    "pink",
+    "white",
+    "brown"
+}, "white", function(p330)
+    if vu328[p330] then
+        vu326.Ambient = vu328[p330]
+    end
+end)
+v325:AddToggle("Fog", false, function(p331)
+    if p331 then
+        vu326.FogStart = 0
+        vu326.FogEnd = 1000
+    else
+        vu326.FogEnd = 100000
+    end
+end)
+v325:AddDropdown("", false, {
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "skyblue",
+    "blue",
+    "violet",
+    "pink",
+    "white",
+    "brown"
+}, "white", function(p332)
+    if vu328[p332] then
+        vu326.FogColor = vu328[p332]
+    end
+end)
+v325:AddSlider("Fog Distance", false, 100, 10000, 1000, function(p333)
+    vu326.FogEnd = p333
+end)
+v325:AddToggle("World effect", false, function(p334)
+    local v335 = not p334 and vu327:FindFirstChild("WeatherPart")
+    if v335 then
+        v335:Destroy()
+    end
+end)
+v325:AddDropdown("", false, {
+    "None",
+    "Rain",
+    "Snow"
+}, "None", function(p336)
+    local v337 = vu327:FindFirstChild("WeatherPart")
+    if v337 then
+        v337:Destroy()
+    end
+    if p336 ~= "None" then
+        local v338 = Instance.new("Part")
+        v338.Name = "WeatherPart"
+        v338.Anchored = true
+        v338.CanCollide = false
+        v338.Size = Vector3.new(1000, 1, 1000)
+        v338.Position = Vector3.new(0, 100, 0)
+        v338.Transparency = 0.5
+        if p336 == "Rain" then
+            v338.Material = Enum.Material.Glass
+            v338.Color = Color3.fromRGB(170, 170, 255)
+        elseif p336 == "Snow" then
+            v338.Material = Enum.Material.Snow
+            v338.Color = Color3.fromRGB(255, 255, 255)
+        end
+        v338.Parent = vu327
+    end
+end)
+v325:AddToggle("Night Mode", false, function(p339)
+    if p339 then
+        game.Lighting.TimeOfDay = "00:00:00"
+        game.Lighting.Brightness = 1
+        game.Lighting.Ambient = Color3.fromRGB(20, 20, 30)
+        game.Lighting.OutdoorAmbient = Color3.fromRGB(10, 10, 20)
+    else
+        game.Lighting.TimeOfDay = "14:00:00"
+        game.Lighting.Brightness = 2
+        game.Lighting.Ambient = Color3.fromRGB(128, 128, 128)
+        game.Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+    end
+end)
+local v340 = v301:AddSection("misc", "left")
+local vu341 = game:GetService("Players")
+local v342 = game:GetService("RunService")
+local vu343 = vu341.LocalPlayer
+local vu344 = workspace.CurrentCamera
+local vu345 = false
+local vu346 = false
+v340:AddToggle("Box", false, function(p347)
+    vu345 = p347
+end)
+v340:AddToggle("Health bar", false, function(p348)
+    vu346 = p348
+end)
+local vu349 = {}
+local function vu353(p350)
+    local v351 = Drawing.new("Square")
+    v351.Visible = false
+    v351.Color = Color3.fromRGB(255, 255, 255)
+    v351.Thickness = 1
+    v351.Filled = false
+    local v352 = Drawing.new("Line")
+    v352.Visible = false
+    v352.Color = Color3.fromRGB(0, 255, 0)
+    v352.Thickness = 2
+    vu349[p350] = {
+        Box = v351,
+        HealthBar = v352
+    }
+end
+local function vu359(p354)
+    local v355 = vu344.CFrame.Position
+    local v356 = p354.Position - v355
+    local v357 = Ray.new(v355, v356)
+    local v358, _ = workspace:FindPartOnRayWithIgnoreList(v357, {
+        vu343.Character
+    })
+    return v358 == p354 and true or p354:IsDescendantOf(v358)
+end
+local function vu366(p360)
+    local v361, v362, v363 = pairs(p360:GetDescendants())
+    local v364 = {}
+    while true do
+        local v365
+        v363, v365 = v361(v362, v363)
+        if v363 == nil then
+            break
+        end
+        if v365:IsA("BasePart") and v365.Name ~= "HumanoidRootPart" then
+            table.insert(v364, v365)
+        end
+    end
+    return v364
+end
+local function vu379(p367)
+    local v368 = vu366(p367)
+    if # v368 ~= 0 then
+        local v369 = math.huge
+        local v370 = math.huge
+        local v371 = - math.huge
+        local v372 = - math.huge
+        local v373, v374, v375 = pairs(v368)
+        while true do
+            local v376
+            v375, v376 = v373(v374, v375)
+            if v375 == nil then
+                break
+            end
+            local v377, v378 = vu344:WorldToViewportPoint(v376.Position)
+            if v378 then
+                v369 = math.min(v369, v377.X)
+                v370 = math.min(v370, v377.Y)
+                v371 = math.max(v371, v377.X)
+                v372 = math.max(v372, v377.Y)
+            end
+        end
+        if v369 ~= math.huge then
+            return v369, v370, v371, v372
+        else
+            return nil
+        end
+    else
+        return nil
+    end
+end
+local function vu381(p380)
+    if vu349[p380] then
+        if vu349[p380].Box then
+            vu349[p380].Box:Remove()
+        end
+        if vu349[p380].HealthBar then
+            vu349[p380].HealthBar:Remove()
+        end
+        vu349[p380] = nil
+    end
+end
+vu341.PlayerRemoving:Connect(vu381)
+v342.RenderStepped:Connect(function()
+    local v382 = vu341
+    local v383, v384, v385 = pairs(v382:GetPlayers())
+    while true do
+        local v386
+        v385, v386 = v383(v384, v385)
+        if v385 == nil then
+            break
+        end
+        local vu387 = false
+        local function v388()
+            vu387 = true
+        end
+        if v386 == vu343 or not v386.Character or not v386.Character:FindFirstChild("Humanoid") then
+            vu381(v386)
+        else
+            if not vu349[v386] then
+                vu353(v386)
+            end
+            local v389 = v386.Character:FindFirstChild("Humanoid")
+            local v390 = vu349[v386].Box
+            local v391 = vu349[v386].HealthBar
+            if v389.Health > 0 then
+                local v392, v393, v394, v395 = vu379(v386.Character)
+                if v392 and vu345 then
+                    v390.Visible = true
+                    v390.Position = Vector2.new(v392, v393)
+                    v390.Size = Vector2.new(v394 - v392, v395 - v393)
+                    local v396, v397, v398 = pairs(vu366(v386.Character))
+                    local v399 = false
+                    while true do
+                        local v400
+                        v398, v400 = v396(v397, v398)
+                        if v398 == nil then
+                            break
+                        end
+                        if vu359(v400) then
+                            v388()
+                            v399 = true
+                        end
+                    end
+                    v390.Color = v399 and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(255, 0, 0)
+                else
+                    v390.Visible = false
+                end
+                if v392 and (vu346 and v389) then
+                    v391.Visible = true
+                    v391.From = Vector2.new(v392 - 3, v393)
+                    v391.To = Vector2.new(v392 - 3, v393 + (v395 - v393) * (v389.Health / v389.MaxHealth))
+                    v391.Color = Color3.fromRGB(0, 255, 0)
+                else
+                    v391.Visible = false
+                end
+            else
+                vu381(v386)
+            end
+        end
+        if vu387 then
+            break
+        end
+    end
+end)
+v340:AddToggle("Bullet trail", false, function(p401)
+    vu161 = p401
+end)
+v340:AddDropdown("Trail Color", false, {
+    "Red",
+    "White",
+    "Green",
+    "Pink",
+    "Sky Blue",
+    "Violet",
+    "Yellow"
+}, "White", function(p402)
+    if p402 == "Red" then
+        vu162 = Color3.fromRGB(255, 0, 0)
+    elseif p402 == "White" then
+        vu162 = Color3.fromRGB(255, 255, 255)
+    elseif p402 == "Green" then
+        vu162 = Color3.fromRGB(0, 255, 0)
+    elseif p402 == "Pink" then
+        vu162 = Color3.fromRGB(255, 105, 180)
+    elseif p402 == "Sky Blue" then
+        vu162 = Color3.fromRGB(135, 206, 235)
+    elseif p402 == "Violet" then
+        vu162 = Color3.fromRGB(238, 130, 238)
+    elseif p402 == "Yellow" then
+        vu162 = Color3.fromRGB(255, 255, 0)
+    end
+end)
+local v403 = v110:AddTab("Misc"):AddSection("Movement", "left")
+local v404 = game:GetService("Players")
+local vu405 = game:GetService("UserInputService")
+local vu406 = game:GetService("RunService")
+local vu407 = v404.LocalPlayer
+getgenv().AutoJumpEnabled = false
+getgenv().InfinityJumpEnabled = false
+getgenv().CircleStrafeEnabled = false
+getgenv().AirStrafeEnabled = false
+getgenv().AirStrafeStrength = 20
+getgenv().QuickStopEnabled = false
+local function vu414(pu408)
+    local vu409 = pu408:WaitForChild("Humanoid")
+    local vu410 = pu408:WaitForChild("HumanoidRootPart")
+    vu406.RenderStepped:Connect(function()
+        if pu408 and (vu409 and vu410) then
+            if getgenv().AutoJumpEnabled and vu409.FloorMaterial ~= Enum.Material.Air then
+                vu409:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+            if getgenv().QuickStopEnabled then
+                local v411 = vu410.Velocity
+                if Vector3.new(v411.X, 0, v411.Z).Magnitude < 0.1 and vu409.MoveDirection.Magnitude == 0 then
+                    vu410.Velocity = Vector3.new(0, v411.Y, 0)
+                end
+            end
+            if getgenv().CircleStrafeEnabled then
+                local v412 = Vector3.new()
+                if vu405:IsKeyDown(Enum.KeyCode.A) then
+                    v412 = v412 + Vector3.new(- 1, 0, 0)
+                end
+                if vu405:IsKeyDown(Enum.KeyCode.D) then
+                    v412 = v412 + Vector3.new(1, 0, 0)
+                end
+                if vu409.FloorMaterial ~= Enum.Material.Air then
+                    vu410.Velocity = Vector3.new(v412.X * vu409.WalkSpeed, vu410.Velocity.Y, v412.Z * vu409.WalkSpeed)
+                end
+            end
+            if getgenv().AirStrafeEnabled and vu409.FloorMaterial == Enum.Material.Air then
+                local v413 = vu409.MoveDirection
+                if v413.Magnitude > 0 then
+                    vu410.Velocity = Vector3.new(v413.X * getgenv().AirStrafeStrength, vu410.Velocity.Y, v413.Z * getgenv().AirStrafeStrength)
+                end
+            end
+        end
+    end)
+end
+vu414(vu407.Character or vu407.CharacterAdded:Wait())
+vu407.CharacterAdded:Connect(function(p415)
+    vu414(p415)
+end)
+vu405.JumpRequest:Connect(function()
+    local v416 = vu407.Character
+    local v417 = v416 and (getgenv().InfinityJumpEnabled and v416:FindFirstChild("Humanoid"))
+    if v417 then
+        v417:ChangeState(Enum.HumanoidStateType.Jumping)
+    end
+end)
+v403:AddToggle("Bunny Hop", false, function(p418)
+    getgenv().AutoJumpEnabled = p418
+end)
+v403:AddToggle("Infinity Jump", false, function(p419)
+    getgenv().InfinityJumpEnabled = p419
+end)
+v403:AddToggle("Circle Strafe", false, function(p420)
+    getgenv().CircleStrafeEnabled = p420
+end)
+v403:AddToggle("Strafe in Air", true, function(p421)
+    getgenv().AirStrafeEnabled = p421
+end)
+v403:AddSlider("Air Strafe Strength", 1, 100, 20, function(p422)
+    getgenv().AirStrafeStrength = p422
+end)
+v403:AddToggle("Quick Stop", false, function(p423)
+    getgenv().QuickStopEnabled = p423
+end)
+local v424 = v110:AddTab("Skin"):AddSection("Clothes", "left")
+local vu425 = {
+    ["Boba Gaming"] = {
+        shirt = 9728621209,
+        pants = 9728625703
+    },
+    CT = {
+        shirt = 1024881965,
+        pants = 1024882693
+    },
+    Terrorist = {
+        shirt = 283387182,
+        pants = 275772367
+    },
+    Joker = {
+        shirt = 1611081109,
+        pants = 1758670400
+    },
+    Police = {
+        shirt = 775650732,
+        pants = 775654890
+    },
+    CJ = {
+        shirt = 10591068760,
+        pants = 129458425
+    },
+    ["Big Smoke"] = {
+        shirt = 2205032059,
+        pants = 1311109431
+    },
+    Gojo = {
+        shirt = 14283066296,
+        pants = 14283119350
+    },
+    ["Black Aesthetic"] = {
+        shirt = 5532806467,
+        pants = 553280648
+    }
+}
+local v426, v427, v428 = pairs(vu425)
+local v429 = {}
+while true do
+    local v430
+    v428, v430 = v426(v427, v428)
+    if v428 == nil then
+        break
+    end
+    table.insert(v429, v428)
+end
+v424:AddListBox(v429, function(p431)
+    local v432 = vu425[p431]
+    if v432 then
+        changeShirt(v432.shirt)
+        changePants(v432.pants)
+    end
+end)
