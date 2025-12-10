@@ -1,4 +1,4 @@
-
+-- ts file was generated at discord.gg/25ms
 
 
 local v110 = ({
@@ -6,12 +6,12 @@ local v110 = ({
         local v2 = {}
         local v3 = UDim2.new(0, 411, 0, 390)
         local v4 = game.CoreGui
-        fps flick = Instance.new("ScreenGui")
-        moonhook.Name = "fps flick|moon"
-        moonhook.Enabled = true
-        moonhook.DisplayOrder = 0
-        moonhook.IgnoreGuiInset = false
-        moonhook.Parent = v4
+        Bankroll = Instance.new("ScreenGui")
+        Bankroll.Name = "Bankroll"
+        Bankroll.Enabled = true
+        Bankroll.DisplayOrder = 0
+        Bankroll.IgnoreGuiInset = false
+        Bankroll.Parent = v4
         Frame = Instance.new("Frame")
         Frame.Name = "Frame"
         Frame.Position = UDim2.new(0, 0, 0, 0)
